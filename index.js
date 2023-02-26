@@ -305,10 +305,10 @@ Not: Gönderi sayısı belli olmayan (NA) hesaba katmayın.
 function platformaGoreCokGonderiYapanFenomen(yeniDizi4, platform){
   let fenomen = "";
   let gonderi = 0;
-  for(let i=0; i<dizi.length; i++){
-    if(yeniDizi4[i].platform === platform && !(dizi[i].posts ==="NA") && dizi[i].posts > gonderi){
-      gonderi= dizi[i].posts;
-      fenomen =dizi[i].profile;
+  for(let i=0; i<yeniDizi4.length; i++){
+    if(yeniDizi4[i].platform === platform && !(yeniDizi4[i].posts ==="NA") && yeniDizi4[i].posts > gonderi){
+      gonderi= yeniDizi4[i].posts;
+      fenomen =yeniDizi4[i].profile;
       }
   }
   return fenomen;
